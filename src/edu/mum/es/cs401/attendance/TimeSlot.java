@@ -7,4 +7,5 @@ public class TimeSlot {
 	String Description;
 	Time beginTime;
 	Time endTime;
+	
 }
