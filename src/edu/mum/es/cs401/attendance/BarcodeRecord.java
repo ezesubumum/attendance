@@ -6,5 +6,6 @@ public class BarcodeRecord {
 	String ID;
 	Date date;
 	TimeSlot timeSlot;
-	Location location;	
+	Location location;
+
 }
