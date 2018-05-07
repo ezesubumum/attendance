@@ -4,9 +4,6 @@ public class Location {
 	private String id;
 	private String name;
 
-	public Location() {
-	}
-
 	public Location(String id, String name) {
 		this.id = id;
 		this.name = name;
@@ -63,5 +60,4 @@ public class Location {
 			return false;
 		return true;
 	}
-	
 }
