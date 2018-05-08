@@ -14,7 +14,6 @@ public class TimeSlot {
 		Description = description;
 		this.beginTime=beginTime;
 		this.endTime=endTime;
-		//LocalTime.parse(beginTime.getHour(),beginTime.getHour());
 	}
 
 	public String getID() {
