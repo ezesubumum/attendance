@@ -7,4 +7,28 @@ public class TimeSlot {
 	String Description;
 	Time beginTime;
 	Time endTime;
+	public TimeSlot(String iD, String description, Time beginTime, Time endTime) {
+		ID = iD;
+		Description = description;
+		this.beginTime = beginTime;
+		this.endTime = endTime;
+	}
+	public String getID() {
+		return ID;
+	}
+	
+	public String getDescription() {
+		return Description;
+	}
+	
+	public Time getBeginTime() {
+		return beginTime;
+	}
+	
+	public Time getEndTime() {
+		return endTime;
+	}
+	
+	
+	
 }

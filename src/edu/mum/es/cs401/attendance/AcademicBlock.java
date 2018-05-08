@@ -33,15 +33,27 @@ public class AcademicBlock {
 		sessions = new HashMap<String, Session>();
 	}
 
-	// ------------------
-	// Accessor methods.
-	// ------------------
+	
 
-	// None!
+	public AcademicBlock(String iD, String name, Date startDate, Date endDate, int semester)
+			 {
+		ID = iD;
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		Semester = semester;
+	}
 
-	// -----------------------------
-	// Miscellaneous other methods.
-	// -----------------------------
+
+
+	public String getID() {
+		return ID;
+	}
+
+	public String getName() {
+		return name;
+	}
+
 
 	public void displayCourseOffering() {
 		// Iterate through the HashMap and display all entries.
@@ -90,6 +102,7 @@ public class AcademicBlock {
 		AcademicBlock ab = new AcademicBlock();
 		//ab.addCourseOffering(new CourseOffering());
 		//ab.addSession();
+		//ab.displaySession();
 		//ab.displayCourseOffering();
 		//ab.findCourseOffering();
 		
