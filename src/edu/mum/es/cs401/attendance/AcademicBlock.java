@@ -6,11 +6,9 @@ import java.util.HashMap;
 public class AcademicBlock {
 	// To encapsulate a Collection of CourseOfferings within the AcademicBlock
 	// class.
-
 	// ------------
 	// Attributes.
 	// ------------
-
 	// This HashMap stores Course object references, using
 	// the courseOffering no. of the CourseOffering (a String) as the key.
 	String ID;
@@ -20,7 +18,6 @@ public class AcademicBlock {
 	int Semester;
 	private HashMap<String, CourseOffering> offerings;
 	private HashMap<String, Session> sessions;
-	
 
 	// ----------------
 	// Constructor(s).
@@ -33,10 +30,7 @@ public class AcademicBlock {
 		sessions = new HashMap<String, Session>();
 	}
 
-	
-
-	public AcademicBlock(String iD, String name, Date startDate, Date endDate, int semester)
-			 {
+	public AcademicBlock(String iD, String name, Date startDate, Date endDate, int semester) {
 		ID = iD;
 		this.name = name;
 		this.startDate = startDate;
@@ -44,8 +38,7 @@ public class AcademicBlock {
 		Semester = semester;
 	}
 
-
-
+	
 	public String getID() {
 		return ID;
 	}
@@ -53,7 +46,6 @@ public class AcademicBlock {
 	public String getName() {
 		return name;
 	}
-
 
 	public void displayCourseOffering() {
 		// Iterate through the HashMap and display all entries.
@@ -63,12 +55,12 @@ public class AcademicBlock {
 			System.out.println();
 		}
 	}
-	
+
 	public void displaySession() {
 		// Iterate through the HashMap and display all entries.
 
 		for (Session s : sessions.values()) {
-			 s.toString();
+			s.toString();
 			System.out.println();
 		}
 	}
@@ -79,7 +71,7 @@ public class AcademicBlock {
 		String key = c.getId();
 		offerings.put(key, c);
 	}
-	
+
 	public void addSession(Session s) {
 		// We use the session no. as the key.
 
@@ -92,21 +84,19 @@ public class AcademicBlock {
 	}
 
 	public boolean isEmpty() {
-		if (offerings.size()==0||sessions.size() == 0)
+		if (offerings.size() == 0 || sessions.size() == 0)
 			return true;
 		else
 			return false;
 	}
-	
+
 	public static void main(String[] args) {
 		AcademicBlock ab = new AcademicBlock();
-		//ab.addCourseOffering(new CourseOffering());
-		//ab.addSession();
-		//ab.displaySession();
-		//ab.displayCourseOffering();
-		//ab.findCourseOffering();
-		
-		
+		// ab.addCourseOffering(new CourseOffering());
+		// ab.addSession();
+		// ab.displaySession();
+		// ab.displayCourseOffering();
+		// ab.findCourseOffering();
+
 	}
 }
-
